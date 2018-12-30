@@ -12,6 +12,8 @@ mongoose
 
 
 app.get("/", (req, res) => res.send("Hello World"));
+app.use("/api/users", users);
+app.use("/api/tweets", tweets);
 
 const port = process.env.PORT || 5000;
 
